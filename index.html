@@ -5,12 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 	<title>byron.solutions - TI Júnior</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="https://getbootstrap.com/favicon.ico">
-
-    <title>Off Canvas Template for Bootstrap</title>
 
     <!-- Bootstrap core CSS -->
     <link href="js/bootstrap.min.css" rel="stylesheet">
@@ -31,45 +27,56 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
     <link href="css.css" rel="stylesheet" type="text/css" />
-    <link rel="icon" type="image/png" href="img/favicon.png" />    
-    <script type="text/javascript" src="js/main.js"></script> 
+    <link rel="icon" type="image/png" href="img/favicon.png" />  
 
 </head>
 <body>
-    <nav class="navbar navbar-fixed-top navbar-inverse topMenu" style="background-color: #eee">
-      <div class="container">
+    <nav role="navigation" class="navbar navbar-default navbar-fixed-top">
+        <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <img src="img/favicon.png" id="menuImg">
-          <a class="navbar-brand" href="#">byron.solutions</a>
+            <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="#">
+            	<img alt="byron.solutions" id="iconLogo"  class="brandIconLogo" src="img/byronTrans.png">
+        	</a>
         </div>
-        <div id="navbar" class="navbar-collapse collapse" aria-expanded="false" style="height: 1px;">
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#about">Sobre</a></li>
-            <li><a href="#contact">Contato</a></li>
-          </ul>
-        </div><!-- /.nav-collapse -->
-      </div><!-- /.container -->
-    </nav><!-- /.navbar -->
-    <div id="mainBackground">
-		<img id="logoImage" src="img/byronTrans.png">
-		<center id="bodyText">Soluções em TI<br/>
-		Marque já uma visita conosco!
-		</center>
-	</div>
-	<div id="about">
-		<img id="logoImage" src="img/byronTrans.png">
-		<center id="bodyText">Soluções em TI<br/>
-		Marque já uma visita conosco!
-		</center>
-	</div>
+        <!-- Collection of nav links and other content for toggling -->
+        <div id="navbarCollapse" class="collapse navbar-collapse">
+            <ul id="mainNavbar" class="nav navbar-nav mainNavbarLogo">
+                <li class="active" onclick="setActive(this,1)"><a href="#">Home</a></li>
+                <li onclick="setActive(this,0)"><a href="#about">Sobre</a></li>
+                <li onclick="setActive(this,0)"><a href="#contact">Contato</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div id="mainContainer">
+	    <div id="mainBackground">
+			<img id="logoImage" src="img/byronTrans.png">
+			<center class="bodyText">Soluções em TI<br/>
+				Marque já uma visita conosco
+			</center>
 
+			<center class="bodyText">
+				<a  id="emailId" href="mailto:contato@byron.solutions">contato@byron.solutions</a>
+			</center>
+		</div>
+
+		<div id="about">
+			<center><img id="aboutIcon" src="img/favicon.png"></center>
+			<p class="aboutText">
+					A byron.solutions é uma empresa júnior que presta serviços na área de TI. Fundada e mantida por alunos da Universidade Federal de Itajubá, a empresa tem como visão entregar um produto de qualidade, ao mesmo tempo que oferece transparência total ao cliente. 
+					<br><br>
+					Os serviços oferecidos pela empresa abrangem o desenvolvimento de sistemas (software para computadores de mesa), web-design (criação de sites responsivos, que funcionem tanto em computadores de mesa, tablets e celulares),  desenvolvimento mobile (aplicativos para tablets e celular), e também oferece consultoria na área de TI.
+			</p>
+		</div>
+		<div id="footer">
+			
+		</div>
+	</div>
 
 
 
@@ -79,5 +86,6 @@
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="js/ie10-viewport-bug-workaround.js"></script>
     <script src="js/offcanvas.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
