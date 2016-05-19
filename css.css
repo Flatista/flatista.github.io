@@ -24,8 +24,8 @@ ul{
 /*Id's*/
 #about{
 	width: 100vw;
-	min-height: 100vh;
 	padding-top: 30px;
+	padding-bottom: 4vh;
 	border: 0px;
 	margin: 0px;
 	background-color: #eeeeee;
@@ -82,7 +82,7 @@ ul{
 .aboutText{
 	z-index:1;
 	position: center;
-	padding-top: 4vh;	
+	padding-top: 4vh;		
 	margin-left: 3vw;
 	margin-right: 3vw;
 	font-family: Segoe UI;
