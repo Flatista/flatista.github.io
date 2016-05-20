@@ -9,6 +9,15 @@ $(document).on('click','.navbar-collapse.in',function(e) {
     }
 });
 
+function navbarCheck(){
+    if($(window).width() <= 767){        
+        $("#mainNavbar").removeClass("mainNavbarFull");
+        $("#mainNavbar").removeClass("mainNavbarLogo");
+    }
+}
+
+$( window ).load(navbarCheck);
+
 $(window).scroll(function () {
     var e = $(this).scrollTop();
     if (e > 120) {
