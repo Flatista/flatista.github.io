@@ -29,13 +29,27 @@ ul{
 	border: 0px;
 	margin: 0px;
 	background-color: #eeeeee;
-	background-repeat: no-repeat;
-	background-position: center center;
 }
+
+#podioLogo{
+	height:100px;
+	margin: 4vh 3vw;
+	float:left;
+}#gitLogo{
+	height:100px;	
+	margin: 4vh 3vw;
+	float:left;
+}
+
 
 #aboutIcon{
 	width: 180px;
 	padding-top: 5vh;
+}
+
+#contact{
+	background-color: #303030;
+	padding-top: 5px;
 }
 
 #emailId{
@@ -73,14 +87,13 @@ ul{
 	position: center center;
 }
 
+
 /*Classes*/
 
 .aboutText{
 	z-index:1;
 	position: center;
-	padding-top: 4vh;		
-	margin-left: 3vw;
-	margin-right: 3vw;
+	margin: 4vh 3vw;
 	font-family: Segoe UI;
 	font-weight: lighter;
 	font-size: 21px;
@@ -115,10 +128,10 @@ ul{
 	height:36px;
 }
 
-
 .contact{
 	padding-top: 30px;
 	padding-bottom:30px;
+	border:0px;
 	background-color: #303030;
 }
 
@@ -129,8 +142,34 @@ ul{
 }
 
 .contact img{
-	height: 100px;
+	height:100px;	
+	margin: 4vh 3vw;
 	float:left;
+}
+
+.contactText{
+	z-index:1;
+	position: center;
+	margin: 4vh 3vw;
+	font-family: Segoe UI;
+	font-weight: lighter;
+	font-size: 21px;
+	color: #eee;
+}
+
+.contactTextTitle{
+	z-index:1;
+	position: center;
+	margin: 1vh 3vw 0vh;
+	font-family: Segoe UI;
+	font-weight: lighter;
+	font-size: 21px;
+	color: #eee;
+}
+
+.equalHeight{
+    margin-bottom: -99999px;
+    padding-bottom: 99999px;
 }
 
 .mainNavbarFull{
@@ -139,4 +178,8 @@ ul{
 
 .mainNavbarLogo{
 	padding-left: 55px;
+}
+
+.row {
+    overflow: hidden; 
 }
