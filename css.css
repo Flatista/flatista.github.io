@@ -77,6 +77,9 @@ ul{
 	background-position: center center;
 }
 
+#menuButton{
+	z-index: 99999;
+}
 #menuImg{	
 	float:left;
 	height:50px;
@@ -108,7 +111,8 @@ ul{
 	font-size: 25px;
 }
 
-.brandIconLogo{
+.brandIconLogo{	
+	z-index:-9999;
 	height:200px;	
 	margin: 11px 11px 3px 11px;
 	float:left;
