@@ -44,10 +44,6 @@ ul{
 	font-weight: lighter;
 }
 
-#footer{
-	background-color: #303030;
-}
-
 #logoImage{
 	z-index:1;
 	width:100vw;
@@ -117,6 +113,24 @@ ul{
 	left:0px;
 	top:0px;
 	height:36px;
+}
+
+
+.contact{
+	padding-top: 30px;
+	padding-bottom:30px;
+	background-color: #303030;
+}
+
+.contactInfo{
+	color: white;
+	line-height: 100px;
+	padding-left: 30px;
+}
+
+.contact img{
+	height: 100px;
+	float:left;
 }
 
 .mainNavbarFull{
