@@ -14,9 +14,10 @@ function navbarCheck(){
         $("#mainNavbar").removeClass("mainNavbarFull");
         $("#mainNavbar").removeClass("mainNavbarLogo");
     }
+    $('#mainBackground').css({'background-image': 'url(img/'+(Math.floor(Math.random()*10000)%20)+'.jpg)'});
 }
 
-$( window ).load(navbarCheck);
+$(window).load(navbarCheck);
 
 $(window).scroll(function () {
     var e = $(this).scrollTop();
