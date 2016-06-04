@@ -38,9 +38,9 @@
         <!-- Collection of nav links and other content for toggling -->
         <div id="navbarCollapse" class="collapse navbar-collapse">
             <ul id="mainNavbar" class="nav navbar-nav mainNavbarLogo">
-                <li><a href="#">Home</a></li>
-                <li><a href="#about">Sobre</a></li>
-                <li><a href="#contact">Contato</a></li>
+                <li><a id="btnmainBackground" href="#">Home</a></li>
+                <li><a id="btnabout" href="#about">Sobre</a></li>
+                <li><a id="btncontact" href="#contact">Contato</a></li>
             </ul>
         </div>
     </nav>
@@ -54,14 +54,26 @@
 
 		<div id="aboutContainer">
 			<div id="about">
-				<center><img class="img-responsive" id="aboutIcon" src="img/ladyByron.png"></center>
+				<div id="vcenter" class="row vcenter">
+					<div class="col-md-3">
+						<center><img src="img/ladyByron.png" id="aboutIcon" class="img-responsive">
+						Ada de Byron King Lovelace</center>
+					</div>
+
+					<div class="col-md-9">
+						<p class="aboutAda">
+							Filha de um grande poeta inglês, Ada de Byron King Lovelace viveu entre os anos de 1815 e 1852 e é hoje considerada a primeira programadora da história, mesmo vivendo mais de um século antes da invenção do computador moderno. Seu envolvimento com a Máquina Analítica de Charles Babbage foi o que consolidou sua posição. Extrapolando a visão original de Babbage, criador da máquina, Ada viu uma possibilidade de abstrair os processos que a mesma fazia, aumentando assim sua aplicabilidade. A abstração de processos é um dos pilares da programação nos dias de hoje. 
+						</p>
+					</div>
+				</div>
 				<p class="aboutText">
-						<strong>Sobre:</strong>
+						
 						<br>
 						A byron.solutions é uma empresa júnior que presta serviços na área de TI. Fundada e mantida por alunos da Universidade Federal de Itajubá, a empresa tem como visão entregar um produto de qualidade, ao mesmo tempo que oferece transparência total ao cliente. 
 						<br><br>
 						Os serviços oferecidos pela empresa abrangem o desenvolvimento de sistemas (software para computadores de mesa), web-design (criação de sites responsivos, que funcionem tanto em computadores de mesa, tablets e celulares),  desenvolvimento mobile (aplicativos para tablets e celular), e também oferece consultoria na área de TI.
 						<br><br>
+						A empresa está estruturada em cinco diretorias, que devem sempre trabalhar em sinergia:
 						<div class="accordion">
 							<ul>
 								<li>
@@ -69,7 +81,7 @@
 										Diretoria de Projetos
 										<img src="img/proj.png">
 										<p class="description">
-											Divisão encarregada de captar e acompanhar o andamento dos projetos executados dentro da empresa. Implantar e certificar de que as devidas metodologias estão sendo usadas. Responsável pelo planejamento e coordenação dp desenvolvimento do projeto colhendo métricas, suprindo necessidades e recrutando recursos adequados.
+											Divisão encarregada de captar e acompanhar o andamento dos projetos executados dentro da empresa. Implantar e certificar de que as devidas metodologias estão sendo usadas. Responsável pelo planejamento e coordenação do desenvolvimento do projeto colhendo métricas, suprindo necessidades e recrutando recursos adequados.
 										</p>
 									</a> </div>
 								</li>
@@ -110,10 +122,11 @@
 								</li>
 							</ul>
 						</div>
-						<strong>Parceiros:</strong>
+						
 				</p>
 				<div class="row">
-					<a href="https://www.facebook.com/byron.solutions" target="_blank">
+					
+					<p class="aboutText"><strong>Parceiros:</strong></p>
 					<div class="col-md-6 aboutCol">
 						<a href="https://podio.com" target="_blank">
 							<img class="img-responsive center-block" id="podioLogo" src="img/podioLogo.png">
@@ -122,7 +135,6 @@
 							Podio é uma ferramenta que oferece suporte para organizações, desde startups até grandes empresas, com ferramentas de gerência de projetos, organização de vendas e clientes e conexão entre todos os trabalhadores da empresa.
 						</p>
 					</div>
-					</a>
 					<div class="col-md-6 aboutCol">
 						<a href="https://github.com" target="_blank">
 							<img class="img-responsive center-block" id="gitLogo" src="img/gitLogo.png">

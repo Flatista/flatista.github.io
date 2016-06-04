@@ -9,12 +9,22 @@ $(document).on('click','.navbar-collapse.in',function(e) {
     }
 });
 
+
+
 function navbarCheck(){
     if($(window).width() <= 767){        
         $("#mainNavbar").removeClass("mainNavbarFull");
         $("#mainNavbar").removeClass("mainNavbarLogo");
     }
     $('#mainBackground').css({'background-image': 'url(img/'+(Math.floor(Math.random()*10000)%20)+'.jpg)'});
+    $("#btnmainBackground, #btnabout, #btncontact").on('click', function(e){
+        e.preventDefault();
+        var target = "#"+$(this).get(0).id.substring(3);
+        target = $(target);
+        $('html, body').stop().animate({
+           scrollTop: target.offset().top
+        }, 1000);
+    });
 }
 
 $(window).load(navbarCheck);

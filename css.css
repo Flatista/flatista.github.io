@@ -5,8 +5,6 @@ body,html{
 	background-color: #eee;
 }
 
-
-
 @font-face {
 	font-family: "Segoe UI";
 	src: url(fonts/segoe-ui-light.ttf) format("truetype");
@@ -24,8 +22,9 @@ body,html{
 }
 
 #aboutIcon{
-	width: 360px;
-	padding-top: 5vh;
+	width: 200px;
+	margin-bottom: 8px;
+	margin-top:20px;
 }
 
 #contact{
@@ -66,7 +65,7 @@ body,html{
 
 #logoImage{
 	z-index:1;
-	width:100vw;
+	width:100%;
 	padding: 30vh 10vw 0vh 10vw;
 	border: 0px;
 	margin: 0px;
@@ -101,7 +100,15 @@ body,html{
 }
 
 /*Classes*/
+.aboutAda{
+	z-index:1;
+	position: center;
+	margin-top: 30px;
 
+	font-family: "Segoe UI";
+	font-weight: lighter;
+	font-size: 20px;
+}
 .aboutText{
 	z-index:1;
 	position: center;
@@ -258,6 +265,7 @@ body,html{
 		height:65px;
 	}
 	.accordion { height: auto; }
+
 }
 
 @media only screen and (max-width: 390px) {
@@ -371,6 +379,12 @@ body,html{
 	height:36px;
 }
 
+.caption{
+	font-family: "Segoe UI";
+	font-weight: lighter;
+	font-size: 16px;
+}
+
 .contact{
 	padding-top: 30px;
 	padding-bottom:30px;
@@ -424,3 +438,6 @@ body,html{
 .row {
     overflow: hidden; 
 }
+
+
+
