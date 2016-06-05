@@ -73,14 +73,13 @@ function SupportVhVw() {
     }
     
     var scaleMargin = function (name,top,right,bottom,left){
-        var scrWidth = jQuery(document).width();
-        var scrHeight = jQuery(document).height();
+        var scrWidth = $(window).width();
+        var scrHeight = $(window).height();
 
         top = (scrHeight * top) / 100;
         right = (scrWidth * right) / 100;        
         bottom = (scrHeight * bottom) / 100;
-        left = (scrWidth * left) / 100;        
-
+        left = (scrWidth * left) / 100;     
         var marginTop = jQuery(name).css('margin-top', top + "px");
         var marginRight = jQuery(name).css('margin-right', right + "px");        
         var marginBottom = jQuery(name).css('margin-bottom', bottom + "px");
@@ -88,14 +87,15 @@ function SupportVhVw() {
     }
 
     var scalePadding = function (name,top,right,bottom,left){
-        var scrWidth = jQuery(document).width();
-        var scrHeight = jQuery(document).height();
+        var scrWidth = $(window).width();
+        var scrHeight = $(window).height();
 
         top = (scrHeight * top) / 100;
         right = (scrWidth * right) / 100;        
         bottom = (scrHeight * bottom) / 100;
         left = (scrWidth * left) / 100;
 
+        if(name == "#logoImage") alert(top);
         var paddingTop = jQuery(name).css('padding-top', top + "px");
         var paddingRight = jQuery(name).css('padding-right', right + "px");        
         var paddingBottom = jQuery(name).css('padding-bottom', bottom + "px");
