@@ -94,8 +94,7 @@ function SupportVhVw() {
         right = (scrWidth * right) / 100;        
         bottom = (scrHeight * bottom) / 100;
         left = (scrWidth * left) / 100;
-
-        if(name == "#logoImage") alert(top);
+        
         var paddingTop = jQuery(name).css('padding-top', top + "px");
         var paddingRight = jQuery(name).css('padding-right', right + "px");        
         var paddingBottom = jQuery(name).css('padding-bottom', bottom + "px");
