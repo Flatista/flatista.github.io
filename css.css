@@ -15,6 +15,7 @@ width:100%;
 /*Id's*/
 #about{
 	padding-top: 30px;
+	padding-bottom: 4vh;
 	border: 0px;
 	margin: 0px;
 	background-color: #eeeeee;
@@ -65,9 +66,9 @@ width:100%;
 }
 
 #logoImage{
-	/* padding on JS */
 	z-index:1;
 	width:100%;
+	padding: 30vh 10vw 0vh 10vw;
 	border: 0px;
 	margin: 0px;
 }
@@ -121,9 +122,9 @@ width:100%;
 }	
 
 .aboutText{
-	/*margin on JS*/
 	z-index:1;
 	position: center;
+	margin: 4vh 3vw;
 	font-family: "Segoe UI";
 	font-weight: lighter;
 	font-size: 20px;
@@ -354,9 +355,9 @@ width:100%;
 }
 
 .bodyText{
-	/* padding on JS */
 	z-index:1;
 	position: center;
+	padding-top: 5vh;
 	font-family: "Segoe UI";
 	font-size: 30px;
 	color:#fff;
@@ -414,9 +415,9 @@ width:100%;
 }
 
 .contactText{
-	/* margin on JS */
 	z-index:1;
 	position: center;
+	margin: 4vh 3vw;
 	font-family: "Segoe UI";
 	font-weight: lighter;
 	font-size: 20px;
@@ -424,9 +425,9 @@ width:100%;
 }
 
 .contactTextTitle{
-	/* margin on JS */
 	z-index:1;
 	position: center;
+	margin: 1vh 3vw 0vh;
 	font-family: "Segoe UI";
 	font-weight: lighter;
 	font-size: 20px;
