@@ -45,8 +45,12 @@ body,html{
 	font-weight: lighter;
 }
 
-
-
+#fb-root {
+    display: none;
+}
+.fb_iframe_widget, .fb_iframe_widget span, .fb_iframe_widget span iframe[style] {
+    width: 100% !important;
+}
 @media screen and (min-width: 750px) {
 	#iconLogo{	
 		-webkit-transition: all  1s ease;
@@ -436,7 +440,6 @@ body,html{
     margin-bottom: -99999px;
     padding-bottom: 99999px;
 }
-iframe { width: 100% !important; }
 .footerContainer{
 	margin-bottom: 10px;
 	margin-top:10px;
