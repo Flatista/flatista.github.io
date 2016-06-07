@@ -19,7 +19,7 @@ function loaded(){
     }
 
     $('#mainBackground').css({'background-image': 'url(img/'+(Math.floor(Math.random()*10000)%20)+'.jpg)'});
-
+    $('body').css('width', window.innerWidth+"px");
     $("#btnmainBackground, #btnabout, #btncontact").on('click', function(e){
         e.preventDefault();
         var target = "#"+$(this).get(0).id.substring(3);
