@@ -436,11 +436,7 @@ body,html{
     margin-bottom: -99999px;
     padding-bottom: 99999px;
 }
-.fb-page, 
-.fb-page span, 
-.fb-page span iframe[style] { 
-    width: 100% !important; 
-}
+iframe { width: 100% !important; }
 .footerContainer{
 	margin-bottom: 10px;
 	margin-top:10px;
