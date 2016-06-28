@@ -14,12 +14,11 @@ body,html{
 
 /*Id's*/
 #about{
-	padding-top: 30px;
-	padding-bottom: 4vh;
 	border: 0px;
 	margin: 0px;
 	background-color: #eeeeee;
-	margin: auto;
+	margin-left: auto;
+	margin-right: auto;
  	max-width:1100px;
 }
 
@@ -27,6 +26,12 @@ body,html{
 	width: 200px;
 	margin-bottom: 8px;
 	margin-top:20px;
+}
+
+#aboutTitle{
+	font-family: "Segoe UI";
+	font-weight: lighter;
+	font-size: 60px;
 }
 
 #contact{
@@ -45,12 +50,36 @@ body,html{
 	font-weight: lighter;
 }
 
+#fbContainer{
+	min-width: 180px;
+	max-width: 340px;
+	height:230px;
+	margin:auto;
+}
+
+.fbWrapper{
+	
+}
+
 #fb-root {
     display: none;
 }
 .fb_iframe_widget, .fb_iframe_widget span, .fb_iframe_widget span iframe[style] {
     width: 100% !important;
 }
+
+@media screen and (max-width: 505px) {
+	.bodyText1{
+		font-size: 3em !important;
+	}
+	.bodyText2{
+		font-size: 1.5em !important;
+	}
+	.bodyText3{
+		font-size: 1.5em !important;
+	}
+}
+
 @media screen and (min-width: 750px) {
 	#iconLogo{	
 		-webkit-transition: all  1s ease;
@@ -71,16 +100,20 @@ body,html{
 
 #logoImage{
 	z-index:1;
-	width:100%;
-	padding: 30vh 10vw 0vh 10vw;
+	width: 500px;
+	max-width: 70vw;
+	padding:10px 0px 0px;
 	border: 0px;
 	margin: 0px;
 }
 
 #mainBackground{
+	position:relative;
 	padding: 0px;
 	border: 0px;
 	margin: 0px;
+	opacity: .3;
+	background-image: url("img/background.jpg");
 	background-repeat:no-repeat;
 	-webkit-background-size:cover;
 	-moz-background-size:cover;
@@ -90,10 +123,20 @@ body,html{
 }
 
 #mainContainer {
-	height:100%;
+	height:100%;    
+	position: relative;
+    overflow: hidden;
+    width: 100%;
 }
-#menuButton{
-	z-index: 99999;
+
+#mainInfo {
+	position:absolute;
+	z-index: 1;
+	width:100%;
+}
+
+#mainMenu:hover{
+	cursor: pointer;
 }
 
 #menuImg{	
@@ -106,7 +149,9 @@ body,html{
 	position: center center;
 }
 
+
 /*Classes*/
+
 .aboutAda{
 	z-index:1;
 	position: center;
@@ -126,10 +171,11 @@ body,html{
 .aboutText{
 	z-index:1;
 	position: center;
-	margin: 4vh 3vw;
 	font-family: "Segoe UI";
 	font-weight: lighter;
 	font-size: 20px;
+	margin-top: 0 !important;
+	margin-bottom: 0 !important;
 }
 
 .accordion{
@@ -137,7 +183,7 @@ body,html{
 	max-width: 1080px;
 	height: 350px;
 	overflow: hidden;
-	margin: 50px auto;
+	margin: 30px auto;
 }
 
 .accordion ul {
@@ -285,6 +331,8 @@ body,html{
 @media only screen and (max-width: 390px) {
    .accordion ul li div a { font-size: 1.25em; }
 }
+
+
 .accordion ul li:nth-child(1) { background-color: rgba(0, 191, 255, 1); }
 .accordion ul li:nth-child(2) { background-color: rgba(0, 76, 153, 1); }
 .accordion ul li:nth-child(3) { background-color: rgba(25, 25, 112, 1); }
@@ -356,13 +404,29 @@ body,html{
 	background-position:center;
 }
 
-.bodyText{
+.bodyText1{
 	z-index:1;
 	position: center;
-	padding-top: 5vh;
+	padding-top: 30vh;
 	font-family: "Segoe UI";
-	font-size: 30px;
-	color:#fff;
+	font-size: 80px;
+	color:#000;
+}
+
+.bodyText2{
+	z-index:1;
+	position: center;
+	font-family: "Segoe UI";
+	font-size: 40px;
+	color:#000;
+}
+
+.bodyText3{
+	z-index:1;
+	position: center;
+	font-family: "Segoe UI";
+	font-size: 35px;
+	color:#000;
 }
 
 .brandIconLogo{	
@@ -427,12 +491,17 @@ body,html{
 	color: #eee;
 }
 
+.divider{
+	display: inline;
+	font-size: 70px;
+}
+
 .equalHeight{
     margin-bottom: -99999px;
     padding-bottom: 99999px;
 }
 .footerContainer{
-	margin-bottom: 10px;
+	margin-bottom: 40px;
 	margin-top:10px;
 	font-family: "Segoe UI";
 	font-weight: lighter;
@@ -443,23 +512,86 @@ body,html{
 .footerIcon{
 	height:25px;
 }
+
 .footerText{
 	font-family: "Segoe UI";
 	font-weight: lighter;
 	font-size: 14px;
 	color: #eee;
 }
-.mainNavbarFull{
-	padding-left: 200px;
-}
 
-.mainNavbarLogo{
-	padding-left: 55px;
+.icon-bar {
+	display: block;
+	width: 40px;
+	height: 5px;
+	max-width: 30vw;
+	background-color: #000;
+	border-radius: 1px;
+	margin-bottom: 5px;
+	opacity: 1;
 }
 
 .row {
     overflow: hidden; 
 }
 
+.partnerPic{
+	margin: 30px auto 30px;
+}
+.titleMej{
+	background-image: url("img/mejPic.jpg");
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	-o-background-size:cover;
+	background-size:cover;
+	background-position:center;
+	background-color: #2A518A;
+	color:#eee;
+}
 
+.titleIcon{
+	font-size: 45px;
+}
 
+.titleEmpresa{
+	background-color: #96d5ff;
+	background-image: url("img/empresaPic.jpg");
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	-o-background-size:cover;
+	background-size:cover;
+	background-position:center;
+}
+
+.titleServicos{
+	background-color: #444;
+	color:#eee;
+	background-image: url("img/servicosPic.jpg");
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	-o-background-size:cover;
+	background-size:cover;
+	background-position:center;
+}
+
+.titleDiretorias{
+	background-color: #444;
+	color:#111;
+	background-image: url("img/diretoriasPic.jpg");
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	-o-background-size:cover;
+	background-size:cover;
+	background-position:center;
+}
+
+.titlePartners{
+	background-color: #444;
+	color:#eee;
+	background-image: url("img/partnersPic.jpg");
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	-o-background-size:cover;
+	background-size:cover;
+	background-position:center;
+}

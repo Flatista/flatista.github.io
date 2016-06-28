@@ -17,23 +17,18 @@ function loaded(){
         }
         setMargin(".aboutAda",4,3,4,3);
     }
-
-    $('#mainBackground').css({'background-image': 'url(img/'+(Math.floor(Math.random()*10000)%20)+'.jpg)'});
     $('body').css('width', window.innerWidth+"px");
-    $("#btnmainBackground, #btnabout, #btncontact").on('click', function(e){
-        e.preventDefault();
-        var target = "#"+$(this).get(0).id.substring(3);
-        target = $(target);
-        $('html, body').stop().animate({
-           scrollTop: target.offset().top
-        }, 1000);
-    });
+    
+    var max = 0.7*window.innerWidth
+    $('#logoImage').css('max-width', max+"px");
 
+    window.addEventListener("resize",function(){
+        $('body').css('width', window.innerWidth+"px");
+    })
     setMargin(".aboutText",4,3,4,3);
     setMargin(".contactText",4,3,4,3);
     setMargin(".contactTextTitle",1,3,0,3);
-    setPadding(".bodyText",5,0,0,0);
-    setPadding("#logoImage",30,10,0,10);
+    //setPadding(".bodyText",5,0,0,0);
     setSize("#mainBackground",100,100);
 }
 
@@ -151,3 +146,24 @@ document.addEventListener('scroll', function (event) {
         $("#mainNavbar").addClass("mainNavbarLogo");
     }
 });
+
+(function ($) {
+
+    'use strict';
+
+    // Toggle classes in body for syncing sliding animation with other elements
+    $('#bs-example-navbar-collapse-2')
+        .on('show.bs.collapse', function (e) {
+            $('body').addClass('menu-slider');
+        })
+        .on('shown.bs.collapse', function (e) {
+            $('body').addClass('in');
+        })
+        .on('hide.bs.collapse', function (e) {
+            $('body').removeClass('menu-slider');
+        })
+        .on('hidden.bs.collapse', function (e) {
+            $('body').removeClass('in');
+        });
+
+})(jQuery);
