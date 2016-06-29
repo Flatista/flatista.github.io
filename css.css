@@ -23,7 +23,7 @@ body,html{
 }
 
 #aboutIcon{
-	width: 200px;
+	width: 170px;
 	margin-bottom: 8px;
 	margin-top:20px;
 }
@@ -552,7 +552,14 @@ body,html{
 }
 
 .titleIcon{
-	font-size: 45px;
+    -webkit-margin-before: 20px;
+    -webkit-margin-after: 20px;
+	font-size: 180px;
+}
+
+.iconWrapper{
+	height:100%;
+	vertical-align: middle;
 }
 
 .titleEmpresa{
@@ -596,4 +603,20 @@ body,html{
 	-o-background-size:cover;
 	background-size:cover;
 	background-position:center;
+}
+
+.bodyEmpresa{
+	margin-top: auto;
+	margin-bottom: auto;
+}
+.row.vdivide [class*='col-']:not(:last-child):after {
+  background: #e0e0e0;
+  width: 1px;
+  content: "";
+  display:inline-block;
+  position: absolute;
+  top:0;
+  bottom: 0;
+  right: 0;
+  min-height: 70px;
 }
