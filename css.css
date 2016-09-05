@@ -338,11 +338,12 @@ body,html{
 .accordion ul li:nth-child(1) { background-color: rgba(0, 191, 255, 1); }
 .accordion ul li:nth-child(2) { background-color: rgba(0, 76, 153, 1); }
 .accordion ul li:nth-child(3) { background-color: rgba(25, 25, 112, 1); }
-.accordion ul li:nth-child(4) { background-color: rgba(255, 29, 29, 1); }
-.accordion ul li:nth-child(5) { background-color: rgba(255, 102, 0, 1); }
+.accordion ul li:nth-child(4) { background-color: rgba(255, 102, 0, 1); }
+.accordion ul li:nth-child(5) { background-color: rgba(230, 0, 92, 1); }
+.accordion ul li:nth-child(6) { background-color: rgba(255, 29, 29, 1);}
 
 .accordion ul:hover li:nth-child(1):hover a { 
-	background: rgba(0, 191, 255, 0.7);
+	background-color: rgba(0, 191, 255, 0.7);
 }
 
 .accordion ul:hover li:nth-child(1):hover div{ 
@@ -355,7 +356,7 @@ body,html{
 }
 
 .accordion ul:hover li:nth-child(2):hover a { 
-	background: rgba(0, 76, 153, 0.7); 
+	background-color: rgba(0, 76, 153,  0.7); 
 }
 
 .accordion ul:hover li:nth-child(2):hover div{ 
@@ -368,7 +369,7 @@ body,html{
 }
 
 .accordion ul:hover li:nth-child(3):hover a { 
-	background: rgba(25, 25, 112, 0.7); 
+	background-color: rgba(25, 25, 112, 0.7); 
 }
 
 .accordion ul:hover li:nth-child(3):hover div{ 
@@ -381,11 +382,11 @@ body,html{
 }
 
 .accordion ul:hover li:nth-child(4):hover a { 
-	background: rgba(255, 29, 29, 0.7); 
+	background-color: rgba(255, 102, 0, 0.7); 
 }
 
 .accordion ul:hover li:nth-child(4):hover div{ 
-	background-image: url("img/operBack.jpg");
+	background-image: url("img/markBack.jpg");
 	-webkit-background-size:cover;
 	-moz-background-size:cover;
 	-o-background-size:cover;
@@ -394,11 +395,24 @@ body,html{
 }
 
 .accordion ul:hover li:nth-child(5):hover a { 
-	background: rgba(255, 102, 0, 0.7); 
+	background-color: rgba(230, 0, 92,  0.7); 
 }
 
 .accordion ul:hover li:nth-child(5):hover div{ 
-	background-image: url("img/markBack.jpg");
+	background-image: url("img/qualBack.jpg");
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	-o-background-size:cover;
+	background-size:cover;
+	background-position:center;
+}
+
+.accordion ul:hover li:nth-child(6):hover a { 
+	background-color: rgba(255, 29, 29, 0.7); 
+}
+
+.accordion ul:hover li:nth-child(6):hover div{ 
+	background-image: url("img/operBack.jpg");
 	-webkit-background-size:cover;
 	-moz-background-size:cover;
 	-o-background-size:cover;
